@@ -6,26 +6,33 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+
+
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'eShop Plus',
-  tagline: 'eShop Plus',
+  title: 'eShop Plus Documentation',
+  tagline: 'Documentation for eShop Plus Panel & App',
   favicon: 'img/favicon.webp',
 
   // Set the production url of your site here
-  url: 'https://wrteam.in/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/',
+    url: "https://wrteam-in.github.io", // GitHub Pages domain
+  baseUrl: "/eshopplus_doc/", 
 
   // GitHub pages deployment config.
-  organizationName: 'WRTeam', // Usually your GitHub org/user name.
-  projectName: 'eShop Plus', // Usually your repo name.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'WRTeam-in', // Usually your GitHub org/user name.
+  projectName: 'eshopplus_doc', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  trailingSlash: true, 
+  deploymentBranch: "gh-pages", 
 
   // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang.
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -45,9 +52,6 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -59,6 +63,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'eShop Plus',
@@ -73,6 +78,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
+        
           {
             href: 'https://wrteam.in/',
             label: 'WRTeam',
@@ -82,6 +88,7 @@ const config = {
       },
       footer: {
         style: 'dark',
+        
         copyright: `Copyright © ${new Date().getFullYear()} WRTeam. All rights reserved.`,
       },
       prism: {
