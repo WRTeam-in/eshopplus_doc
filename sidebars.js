@@ -5,19 +5,19 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
-      id: 'intro', // from docs/intro.md
+      id: 'index', // ✅ corrected here
     },
     {
       type: 'doc',
-      id: 'rating', // from docs/rating.md
+      id: 'rating',
     },
     {
       type: 'doc',
-      id: 'contact-us', // from docs/contact-us.md
+      id: 'contact-us',
     },
     {
       type: 'doc',
-      id: 'support', // from docs/support.md
+      id: 'support',
     },
     {
       type: 'category',
