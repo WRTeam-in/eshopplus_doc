@@ -21,7 +21,7 @@ const FeatureList = [
         Comprehensive guide for setting up and customizing your mobile application for both Android and iOS platforms.
       </>
     ),
-    link: '/docs/intro',
+    link: '/eshopplus_doc/app-setup', // ✅ Updated internal route
   },
   {
     title: 'Features',
@@ -35,7 +35,8 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description, link}) {
+
+function Feature({ Svg, title, description, link }) {
   const handleClick = (e) => {
     if (title === 'App Documentation') {
       window.location.href = link;
@@ -45,10 +46,10 @@ function Feature({Svg, title, description, link}) {
   };
 
   return (
-    <div 
-      className={clsx('col col--3', styles.featureCard)} 
+    <div
+      className={clsx('col col--3', styles.featureCard)}
       onClick={handleClick}
-      style={{ 
+      style={{
         cursor: 'pointer',
         background: 'linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%)',
         padding: '2rem',
@@ -68,10 +69,10 @@ function Feature({Svg, title, description, link}) {
         border: '1px solid rgba(255,255,255,0.1)',
       }}
     >
-      <div 
-        className={styles.featureIcon} 
-        style={{ 
-          flex: '0 0 auto', 
+      <div
+        className={styles.featureIcon}
+        style={{
+          flex: '0 0 auto',
           marginBottom: '1rem',
           transform: 'translateY(0)',
           transition: 'transform 0.3s ease-in-out'
@@ -79,21 +80,21 @@ function Feature({Svg, title, description, link}) {
       >
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div 
+      <div
         className={styles.featureContent}
-        style={{ 
-          flex: '1 1 auto', 
-          display: 'flex', 
-          flexDirection: 'column', 
+        style={{
+          flex: '1 1 auto',
+          display: 'flex',
+          flexDirection: 'column',
           justifyContent: 'center',
           textAlign: 'center',
           zIndex: 1
         }}
       >
-        <Heading 
-          as="h3" 
-          style={{ 
-            color: 'white', 
+        <Heading
+          as="h3"
+          style={{
+            color: 'white',
             marginBottom: '1rem',
             fontSize: '1.5rem',
             fontWeight: '600'
@@ -101,9 +102,9 @@ function Feature({Svg, title, description, link}) {
         >
           {title}
         </Heading>
-        <p style={{ 
-          flex: '1 1 auto', 
-          display: 'flex', 
+        <p style={{
+          flex: '1 1 auto',
+          display: 'flex',
           alignItems: 'center',
           fontSize: '1rem',
           lineHeight: '1.6',
@@ -120,9 +121,9 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row" style={{ 
-          display: 'flex', 
-          justifyContent: 'center', 
+        <div className="row" style={{
+          display: 'flex',
+          justifyContent: 'center',
           alignItems: 'stretch',
           gap: '2rem',
           minHeight: '400px',
@@ -131,7 +132,7 @@ export default function HomepageFeatures() {
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
-        </div>  
+        </div>
       </div>
     </section>
   );
