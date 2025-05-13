@@ -5,10 +5,6 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'doc',
-      id: 'index', // ✅ corrected here
-    },
-    {
-      type: 'doc',
       id: 'rating',
     },
     {
