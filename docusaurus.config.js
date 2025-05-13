@@ -12,6 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  
   title: 'eShop Plus Documentation',
   tagline: 'Documentation for eShop Plus Panel & App',
   favicon: 'img/favicon.webp',
@@ -30,6 +31,8 @@ const config = {
   trailingSlash: true, 
   deploymentBranch: "gh-pages", 
 
+ 
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
@@ -44,6 +47,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/docs', // change this from '/' to '/docs'
           sidebarPath: './sidebars.js',
         },
         blog: {
@@ -63,6 +67,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      deployment: {
+        useSSH: true,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
@@ -96,6 +103,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    
 };
 
 export default config;
