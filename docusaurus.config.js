@@ -4,7 +4,7 @@
 // There are various equivalent ways to declare your Docusaurus config.
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 
 
@@ -12,14 +12,14 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  
+
   title: 'eShop Plus Documentation',
   tagline: 'Documentation for eShop Plus Panel & App',
   favicon: 'img/favicon.webp',
 
   // Set the production url of your site here
-    url: "https://wrteam-in.github.io", // GitHub Pages domain
-  baseUrl: "/eshopplus_doc/", 
+  url: "https://wrteam-in.github.io", // GitHub Pages domain
+  baseUrl: "/eshopplus_doc/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -28,10 +28,10 @@ const config = {
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  trailingSlash: true, 
-  deploymentBranch: "gh-pages", 
+  trailingSlash: true,
+  deploymentBranch: "gh-pages",
 
- 
+
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -47,7 +47,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/docs', // change this from '/' to '/docs'
+          routeBasePath: '/', // change this from '/' to '/docs'
           sidebarPath: './sidebars.js',
         },
         blog: {
@@ -85,7 +85,7 @@ const config = {
             position: 'left',
             label: 'Documentation',
           },
-        
+
           {
             href: 'https://wrteam.in/',
             label: 'WRTeam',
@@ -95,7 +95,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        
+
         copyright: `Copyright © ${new Date().getFullYear()} WRTeam. All rights reserved.`,
       },
       prism: {
@@ -103,7 +103,7 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
-    
+
 };
 
 export default config;
