@@ -22,7 +22,7 @@ The documentation is organized into several sections:
 
 ### For mobile app
 
-1. Flutter Version: Flutter stable channel 3.29.2  
+1. Flutter Version: Flutter stable channel 3.32.2
 2. Java Version: JDK version 21  
 3. XCode : XCode version 16.2  
 4. Android SDK : SDK 35
