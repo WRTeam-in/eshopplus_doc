@@ -10,28 +10,38 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-       
-      
+    <div className={styles.heroContent}>
+      <Heading as="h1" className={styles.stunningTitle}>
+        {siteConfig.title}
+      </Heading>
+      <p className={styles.stunningSubtitle}>
+        The next-generation eCommerce platform for modern businesses. <br />
+        Fast, flexible, and packed with features for your growth.
+      </p>
+      <div className={styles.stunningButtons}>
+        <Link
+          className={styles.ctaButton}
+          to="/eshopplus_doc/eshop-plus-features"
+        >
+          🚀 Explore Features
+        </Link>
       </div>
-    </header>
+    </div>
   );
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
-    <Layout
-      
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+    <Layout description="Description will go into a meta tag in <head />">
+      <div className={styles.fullScreenContainer}>
+        <div className={styles.stunningHero}>
+          <HomepageHeader />
+          <div className={styles.animatedGradient}></div>
+        </div>
+        <div className={styles.featuresWrapper}>
+          <HomepageFeatures />
+        </div>
+      </div>
     </Layout>
   );
 }

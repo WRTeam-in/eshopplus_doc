@@ -23,22 +23,31 @@ const FeatureList = [
     ),
     link: '/eshopplus_doc/app-setup', // ✅ Updated internal route
   },
+  // {
+  //   title: 'Features',
+  //   Svg: require('@site/static/img/features.svg').default,
+  //   description: (
+  //     <>
+  //       Explore the rich features and functionalities available in the eShop Plus platform.
+  //     </>
+  //   ),
+  //   link: '/eshopplus_doc/eshop-plus-features'
+  // },
   {
-    title: 'Features',
-    Svg: require('@site/static/img/features.svg').default,
+    title: 'Changelog',
+    Svg: require('@site/static/img/changelog.svg').default,
     description: (
       <>
-        Explore the rich features and functionalities available in the eShop Plus platform.
+        Stay up to date with the latest features, improvements, and fixes in eShop Plus.
       </>
     ),
-    link: 'https://docs.google.com/document/d/1Mxp_E6KGWC7oiQladYhwBH4eLLHfn4m9C0bn2z_2fk4/edit?tab=t.0'
+    link: '/eshopplus_doc/changelog'
   },
 ];
 
-
 function Feature({ Svg, title, description, link }) {
   const handleClick = (e) => {
-    if (title === 'App Documentation') {
+    if (link.startsWith('/')) {
       window.location.href = link;
     } else {
       window.open(link, '_blank');
@@ -47,69 +56,20 @@ function Feature({ Svg, title, description, link }) {
 
   return (
     <div
-      className={clsx('col col--3', styles.featureCard)}
+      className={clsx(styles.featureCard, 'feature-card')}
       onClick={handleClick}
-      style={{
-        cursor: 'pointer',
-        background: 'linear-gradient(135deg, #2d2d2d 0%, #1a1a1a 100%)',
-        padding: '2rem',
-        borderRadius: '15px',
-        margin: '1rem',
-        color: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '400px',
-        width: '300px',
-        transition: 'all 0.3s ease-in-out',
-        position: 'relative',
-        overflow: 'hidden',
-        boxShadow: '0 10px 20px rgba(0,0,0,0.2)',
-        border: '1px solid rgba(255,255,255,0.1)',
-      }}
+      tabIndex={0}
+      role="button"
+      aria-label={title}
     >
-      <div
-        className={styles.featureIcon}
-        style={{
-          flex: '0 0 auto',
-          marginBottom: '1rem',
-          transform: 'translateY(0)',
-          transition: 'transform 0.3s ease-in-out'
-        }}
-      >
+      <div className={styles.featureIcon}>
         <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div
-        className={styles.featureContent}
-        style={{
-          flex: '1 1 auto',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          textAlign: 'center',
-          zIndex: 1
-        }}
-      >
-        <Heading
-          as="h3"
-          style={{
-            color: 'white',
-            marginBottom: '1rem',
-            fontSize: '1.5rem',
-            fontWeight: '600'
-          }}
-        >
+      <div className={styles.featureContent}>
+        <Heading as="h3" className={styles.featureTitle}>
           {title}
         </Heading>
-        <p style={{
-          flex: '1 1 auto',
-          display: 'flex',
-          alignItems: 'center',
-          fontSize: '1rem',
-          lineHeight: '1.6',
-          opacity: '0.9'
-        }}>
+        <p className={styles.featureDesc}>
           {description}
         </p>
       </div>
@@ -119,20 +79,11 @@ function Feature({ Svg, title, description, link }) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
-        <div className="row" style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'stretch',
-          gap: '2rem',
-          minHeight: '400px',
-          padding: '2rem 0'
-        }}>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
+    <section className={styles.featuresSection}>
+      <div className={styles.featuresGrid}>
+        {FeatureList.map((props, idx) => (
+          <Feature key={idx} {...props} />
+        ))}
       </div>
     </section>
   );
