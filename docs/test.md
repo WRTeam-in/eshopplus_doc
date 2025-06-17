@@ -348,10 +348,14 @@ import TabItem from '@theme/TabItem';
 
 <div className="feature-section">
   <h2>🔄 Return & Refund Process</h2>
-  <div className ="image-container">
-  ![Return Process](./feature/img/4__pastedGraphic.png)
+  
+  <div className="image-container">
+    <img src="/img/feature/4__pastedGraphic.png" alt="Return Process" />
   </div>
-  ![Return Process 2](./feature/img/5__pastedGraphic.png)
+  
+  <div className="image-container">
+    <img src="/img/feature/5__pastedGraphic.png" alt="Return Process 2" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -373,9 +377,13 @@ import TabItem from '@theme/TabItem';
     <li>Add categories and commission and click on save and click on update</li>
   </ol>
 
-  ![Return Process Example](./feature/img/6__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/6__pastedGraphic.png" alt="Return Process Example" />
+  </div>
   
-  ![Seller Registration](./feature/img/7__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/7__pastedGraphic.png" alt="Seller Registration" />
+  </div>
 
   <div className="info-box">
     <strong>Permission Setting:</strong> There is a permission setting for sellers that requires product approval. If enabled, the seller's products will be marked as Not Approved by default. The admin will review, verify, and approve the products before they are available for sale.
@@ -388,7 +396,9 @@ import TabItem from '@theme/TabItem';
     <li>This allows the same seller to sell their products across multiple stores.</li>
   </ul>
 
-  ![Multi-Store Seller](./feature/img/8__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/8__pastedGraphic.png" alt="Multi-Store Seller" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -400,7 +410,9 @@ import TabItem from '@theme/TabItem';
     <li>Or you can manually set commission from admin panel</li>
   </ul>
 
-  ![Multi-Store Seller](./feature/img/9__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/9__pastedGraphic.png" alt="Multi-Store Seller" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -416,9 +428,13 @@ import TabItem from '@theme/TabItem';
     <li><strong>Variant Level:</strong> Manages stock for each variant separately. While adding variants, there is an option to set stock for each variant.</li>
   </ul>
 
-  ![Multi-Store Seller](./feature/img/10__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/10__pastedGraphic.png" alt="Multi-Store Seller" />
+  </div>
   
-  ![Stock Management](./feature/img/11__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/11__pastedGraphic.png" alt="Stock Management" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -432,7 +448,9 @@ import TabItem from '@theme/TabItem';
     <li>The cron job runs every midnight at 12:00 AM.</li>
   </ul>
 
-  ![Multi-Store Seller](./feature/img/12__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/12__pastedGraphic.png" alt="Multi-Store Seller" />
+  </div>
 
   <div className="warning-box">
     <strong>Important:</strong> If you're unsure how to set a cron job for once a day, seek help from server support or search online for guidance.
@@ -451,7 +469,9 @@ import TabItem from '@theme/TabItem';
     <li><strong>Price Excluding Tax:</strong> If you select "Price Excluding Tax," the system will calculate the tax amount separately and add it to the price accordingly.</li>
   </ul>
 
-  ![Cashback Coupon Example](./feature/img/13__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/13__pastedGraphic.png" alt="Cashback Coupon Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -470,15 +490,25 @@ import TabItem from '@theme/TabItem';
     <li>Save the product, and it's done</li>
   </ol>
 
-  ![Multi-Tax Option](./feature/img/14__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/14__pastedGraphic.png" alt="Multi-Tax Option" />
+  </div>
   
-  ![Multi-Tax Option](./feature/img/15__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/15__pastedGraphic.png" alt="Multi-Tax Option" />
+  </div>
   
-  ![Multi-Tax Option](./feature/img/16__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/16__pastedGraphic.png" alt="Multi-Tax Option" />
+  </div>
   
-  ![Multi-Tax Option](./feature/img/17__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/17__pastedGraphic.png" alt="Multi-Tax Option" />
+  </div>
   
-  ![Multi-Tax Option](./feature/img/18__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/18__pastedGraphic.png" alt="Multi-Tax Option" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -490,7 +520,9 @@ import TabItem from '@theme/TabItem';
     <li>The admin can collect the amount from the delivery boy from the cash collection.</li>
   </ul>
 
-  ![Cash Collection Example](./feature/img/19__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/19__pastedGraphic.png" alt="Cash Collection Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -502,13 +534,17 @@ import TabItem from '@theme/TabItem';
     <li>Used to settle the delivery boy's commission.</li>
   </ul>
 
-  ![Fund Transfer Example](./feature/img/20__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/20__pastedGraphic.png" alt="Fund Transfer Example" />
+  </div>
   
   <ul className="feature-list">
     <li>The admin manually pays the delivery boy and records the transaction as a Fund Transfer.</li>
   </ul>
 
-  ![Fund Transfer Example](./feature/img/21__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/21__pastedGraphic.png" alt="Fund Transfer Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -520,9 +556,13 @@ import TabItem from '@theme/TabItem';
     <li>Seller and admin can send withdrawal requests from their panel or app, and by default, it's set as pending. The admin can approve or reject it.</li>
   </ul>
 
-  ![Payment Request Example](./feature/img/22__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/22__pastedGraphic.png" alt="Payment Request Example" />
+  </div>
   
-  ![Payment Request Example](./feature/img/23__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/23__pastedGraphic.png" alt="Payment Request Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -536,11 +576,17 @@ import TabItem from '@theme/TabItem';
     <li>After adding the city and zipcode, you can create the zone.</li>
   </ul>
 
-  ![Fund Transfer Example](./feature/img/24__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/24__pastedGraphic.png" alt="Fund Transfer Example" />
+  </div>
   
-  ![Fund Transfer Example](./feature/img/25__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/25__pastedGraphic.png" alt="Fund Transfer Example" />
+  </div>
   
-  ![Zone Process Example](./feature/img/26__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/26__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -550,7 +596,9 @@ import TabItem from '@theme/TabItem';
   
   <p>While adding a store, there's an option for deliverability, which can be set either by zip code or city. This setting applies to all sellers registered in this store.</p>
 
-  ![Zone Process Example](./feature/img/27__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/27__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
   
   <ul className="feature-list">
     <li>There's an option to add city, zip code, and zone in the location settings. You can add the zip code, city, and zone data from there.</li>
@@ -561,13 +609,21 @@ import TabItem from '@theme/TabItem';
     <li>Based on the seller's zone, the delivery boy's zone, and the user's city or zipcode, it will check whether the product is deliverable to the user's address. If the store's deliverability setting is set to zip code-wise, it will check the seller's zip code against the user's zip code. If it's set to city-wise, it will check the city.</li>
   </ul>
 
-  ![Zone Process Example](./feature/img/28__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/28__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
   
-  ![Zone Process Example](./feature/img/29__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/29__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
   
-  ![Zone Process Example](./feature/img/30__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/30__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
   
-  ![Zone Process Example](./feature/img/31__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/31__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -588,11 +644,17 @@ import TabItem from '@theme/TabItem';
     <li>Paste the values of channel name, app ID, pusher key, pusher secret key, and cluster in the respective fields</li>
   </ol>
 
-  ![Zone Process Example](./feature/img/33__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/33__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
   
-  ![Zone Process Example](./feature/img/34__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/34__pastedGraphic.png" alt="Zone Process Example" />
+  </div>
   
-  ![Pusher Setting Example](./feature/img/35__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/35__pastedGraphic.png" alt="Pusher Setting Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -621,17 +683,29 @@ import TabItem from '@theme/TabItem';
     <li>Click Done</li>
   </ul>
 
-  ![SMTP Settings Example](./feature/img/36__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/36__pastedGraphic.png" alt="SMTP Settings Example" />
+  </div>
   
-  ![SMTP Settings Example](./feature/img/37__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/37__pastedGraphic.png" alt="SMTP Settings Example" />
+  </div>
   
-  ![SMTP Settings Example](./feature/img/38__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/38__pastedGraphic.png" alt="SMTP Settings Example" />
+  </div>
   
-  ![SMTP Settings Example](./feature/img/39__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/39__pastedGraphic.png" alt="SMTP Settings Example" />
+  </div>
   
-  ![SMTP Settings Example](./feature/img/40__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/40__pastedGraphic.png" alt="SMTP Settings Example" />
+  </div>
   
-  ![SMTP Settings Example](./feature/img/41__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/41__pastedGraphic.png" alt="SMTP Settings Example" />
+  </div>
 
   <p><strong>Step 3: Test the SMTP Configuration</strong></p>
   <ul className="feature-list">
@@ -639,7 +713,9 @@ import TabItem from '@theme/TabItem';
     <li>If you receive the test email successfully, navigate to Settings → SMTP Settings and configure your SMTP details accordingly</li>
   </ul>
 
-  ![SMTP Test Example](./feature/img/42__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/42__pastedGraphic.png" alt="SMTP Test Example" />
+  </div>
 </div>
 
 <div className="divider"></div>
@@ -655,15 +731,25 @@ import TabItem from '@theme/TabItem';
     <li>Paste the Project ID in the admin panel</li>
   </ul>
 
-  ![Firebase Project Example](./feature/img/43__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/43__pastedGraphic.png" alt="Firebase Project Example" />
+  </div>
   
-  ![Firebase Project Example](./feature/img/44__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/44__pastedGraphic.png" alt="Firebase Project Example" />
+  </div>
   
-  ![Firebase Project Example](./feature/img/45__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/45__pastedGraphic.png" alt="Firebase Project Example" />
+  </div>
   
-  ![Firebase Project Example](./feature/img/46__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/46__pastedGraphic.png" alt="Firebase Project Example" />
+  </div>
   
-  ![Firebase Project Example](./feature/img/47__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/47__pastedGraphic.png" alt="Firebase Project Example" />
+  </div>
 
   <p><strong>Step 2: Generate Service JSON File</strong></p>
   <ul className="feature-list">
@@ -672,9 +758,13 @@ import TabItem from '@theme/TabItem';
     <li>Upload the downloaded Service JSON file in the admin panel</li>
   </ul>
 
-  ![Firebase Project Example](./feature/img/48__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/48__pastedGraphic.png" alt="Firebase Project Example" />
+  </div>
   
-  ![Firebase Service JSON Example](./feature/img/49__pastedGraphic.png)
+  <div className="image-container">
+    <img src="/img/feature/49__pastedGraphic.png" alt="Firebase Service JSON Example" />
+  </div>
 </div>
 
 </div> 
