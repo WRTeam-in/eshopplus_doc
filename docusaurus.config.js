@@ -54,6 +54,11 @@ const config = {
       deployment: {
         useSSH: true,
       },
+      colorMode: {
+        defaultMode: 'light',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'eShop Plus',
@@ -71,7 +76,7 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'dark',  
         copyright: `Copyright © ${new Date().getFullYear()} WRTeam. All rights reserved.`,
       },
       prism: {

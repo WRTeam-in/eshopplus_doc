@@ -284,22 +284,20 @@ import TabItem from '@theme/TabItem';
   }
 
   .link-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
-    padding: 10px 20px;
+
+    color: linear-gradient(135deg, #667eea, #764ba2);
+    padding: 5px 10px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
   }
 
   .link-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    /* box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4); */
     text-decoration: none;
-    color: white;
+    color:  #667eea;
   }
 
   .divider {
@@ -345,11 +343,61 @@ import TabItem from '@theme/TabItem';
 </div>
 
 <div className="divider"></div>
+<div className="feature-section">
+  <h2>📦 Orders Management</h2>
+  
+  <ul className="feature-list">
+    <li>Only sellers can ship orders. Admin has no rights to edit orders.</li>
+    <li>
+      The Seller Panel contains two main tabs:
+      <ul>
+        <li>Order Items tab - Shows all items for your orders</li>
+        <li>Shipments tab - Contains "Create a Parcel" button and Created Parcels List</li>
+      </ul>
+       ![Return Process](./feature/img/pastedGraphic.png)
+    </li>
+    <li>
+      To ship an order:
+      <ul>
+        <li>Click "Create a Parcel" button</li>
+        <li>Select items to ship</li>
+        <li>Create the parcel</li>
+      </ul>
+       ![Return Process](./feature/img/1__pastedGraphic.png)
+    </li>
+    <li>
+      Once created, parcels appear in a list with 4 actions:
+      <ul>
+        <li>View - See items in the parcel</li>
+        <li>Invoice - View/download parcel invoice</li>
+        <li>Update Status - Change shipping status</li>
+        <li>Delete - Remove unshipped parcels only</li>
+      </ul>
+       ![Return Process](./feature/img/2__pastedGraphic.png)
+    </li>
+    <li>
+      For shipping status updates:
+      <ul>
+        <li>Click Update Status to open window</li>
+        <li>For Local Shipping: Select delivery person and update status</li>
+      </ul>
+       ![Return Process](./feature/img/3__pastedGraphic.png)
+    </li>
+  </ul>
+</div>
+
+
+<div className="divider"></div>
 
 <div className="feature-section">
   <h2>🔄 Return & Refund Process</h2>
-  <div className ="image-container">
-  ![Return Process](./feature/img/4__pastedGraphic.png)
+  <ul className="feature-list">
+    <li>Currently, the method for managing return parcels is manual.</li>
+    <li>When a customer requests a return, the admin will receive the request, accept it, and mark the item as returned once the parcel is received</li>
+    <li>Note: Sellers cannot update the status for returns.</li>
+  </ul>
+  <div className="image-container"> 
+    ![Return Process](./feature/img/4__pastedGraphic.png)
   </div>
   ![Return Process 2](./feature/img/5__pastedGraphic.png)
 </div>
@@ -388,7 +436,7 @@ import TabItem from '@theme/TabItem';
     <li>This allows the same seller to sell their products across multiple stores.</li>
   </ul>
 
-  ![Multi-Store Seller](./feature/img/8__pastedGraphic.png)
+
 </div>
 
 <div className="divider"></div>
@@ -397,10 +445,20 @@ import TabItem from '@theme/TabItem';
   <h2>💰 Commission Management</h2>
   
   <ul className="feature-list">
+    <li>First you have to set cron job</li>
+    <li>Cron job must be set (For once in a day) on your server for seller commission to be work</li>
+    <li>Cron job will run every midnight at 12:00 AM</li>
+    <li>Formula for seller commision is Sub total (Excluding delivery charge) / 100 * seller commission percentage</li>
+    <li>For example sub total is 1378 and seller commission is 20% then 1378 / 100 X 20 = 275.6 so 1378 - 275.6 = 1102.4 will get credited into seller's wallet</li>
+    <li>If Order item's status is delivered then only the seller will get commission</li>
+    <li>Ex - 1. Order placed on 11-Aug-21 and product return days are set to 0 so 11-Aug + 0 days = 11-Aug seller commission will get credited on 12-Aug-21 at 12:00 AM (Mid night)</li>
+    <li>Ex - 2. Order placed on 11-Aug-21 and product return days are set to 7 so 11-Aug + 7 days = 18-Aug seller commission will get credited on 19-Aug-21 at 12:00 AM (Mid night)</li>
+    <li>If the seller commission doesn't work, make sure the cron job is set properly and it is working. If you don't know how to set a cron job for once in a day please take help of server support or search for it</li>
+
     <li>Or you can manually set commission from admin panel</li>
   </ul>
+  ![Multi-Store Seller](./feature/img/8__pastedGraphic.png)
 
-  ![Multi-Store Seller](./feature/img/9__pastedGraphic.png)
 </div>
 
 <div className="divider"></div>
@@ -410,14 +468,22 @@ import TabItem from '@theme/TabItem';
   
   <ul className="feature-list">
     <li>While adding products and combo products, there is an option to select the Product Type.</li>
+  </ul>
+  
+  ![Multi-Store Seller](./feature/img/9__pastedGraphic.png)
+  
+  <ul className="feature-list">
     <li>If it's a simple product, click on Enable Stock Management, add the details, and click Save Settings.</li>
+  </ul>
+  
+  ![Multi-Store Seller](./feature/img/10__pastedGraphic.png)
+  
+  <ul className="feature-list">
     <li>If it's a variable product, there are two types of stock management:</li>
     <li><strong>Product Level:</strong> Sets the same stock for all variants.</li>
     <li><strong>Variant Level:</strong> Manages stock for each variant separately. While adding variants, there is an option to set stock for each variant.</li>
   </ul>
 
-  ![Multi-Store Seller](./feature/img/10__pastedGraphic.png)
-  
   ![Stock Management](./feature/img/11__pastedGraphic.png)
 </div>
 
@@ -430,7 +496,43 @@ import TabItem from '@theme/TabItem';
     <li>There is an option for cashback while adding a promo code.</li>
     <li>A cron job must be set up on your server for the promo code discount to work.</li>
     <li>The cron job runs every midnight at 12:00 AM.</li>
+    <li>
+      <strong>Formula for Promo Code Discount:</strong>
+      <ul>
+        <li>Subtotal (excluding delivery charges) - Promo code discount (percentage/amount)</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Example:</strong>
+      <ul>
+        <li>If the subtotal is 1300 and the promo code discount is 100, then: 1300 - 100 = 1200</li>
+        <li>100 will be credited to the user's wallet.</li>
+      </ul>
+    </li>
+    <li>
+      The promo code discount will be credited only if:
+      <ul>
+        <li>The order status is marked as delivered.</li>
+        <li>The return policy period has expired.</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Example:</strong>
+      <ul>
+        <li>Order placed on: 10-Sep-22</li>
+        <li>Return policy days: 1 day</li>
+        <li>Credit date: 11-Sep-22 at 12:00 AM (midnight)</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Troubleshooting:</strong>
+      <ul>
+        <li>If the promo code discount is not working, ensure the cron job is set up correctly.</li>
+        <li>If you're unsure how to set a cron job for once a day, seek help from server support or search online for guidance.</li>
+      </ul>
+    </li>
   </ul>
+
 
   ![Multi-Store Seller](./feature/img/12__pastedGraphic.png)
 
