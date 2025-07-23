@@ -6,6 +6,7 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.0.6            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.5            | 3.32.2         | 2.0.20        | 8.6.1       | gradle-8.9-all.zip       | 21          |
 | 1.0.4            | 3.29.2         | 2.0.20        | 8.6.1      | gradle-8.9-all.zip       | 21         |
 | 1.0.3            | 3.27.4          | 1.8.22       | 7.3.0       | gradle-7.6.3-all.zip       | 19          |
@@ -13,6 +14,16 @@
 
 
 ---
+
+:::tip Version 1.0.6 — 12 June 2025
+- [Added] Bank Transfer Payment.
+- [Added] Custom Store Fields - These fields can be used while adding products for that store.
+- [Added] Sellers can request custom categories and brands from the app/panel for admin approval.
+- [Improved] Return requests now go directly to sellers instead of admin.
+- [Improved] Code Improvement and minor bug fixes
+- [Compatible] Flutter version - 3.32.6
+:::
+
 
 :::tip Version 1.0.5 — 12 June 2025
 - **[Added]** Category Bulk Upload/Update option

@@ -393,8 +393,8 @@ import TabItem from '@theme/TabItem';
   <h2>🔄 Return & Refund Process</h2>
   <ul className="feature-list">
     <li>Currently, the method for managing return parcels is manual.</li>
-    <li>When a customer requests a return, the admin will receive the request, accept it, and mark the item as returned once the parcel is received</li>
-    <li>Note: Sellers cannot update the status for returns.</li>
+    <li>When a customer requests a return, the Seller will receive the request. He can accpet or reject it. If accepted then Delivery boy will receive the parcel and change the status to 'Return Pickedup' . After that seller will mark the item as Returned</li>
+
   </ul>
   <div className="image-container"> 
     ![Return Process](./feature/img/4__pastedGraphic.png)

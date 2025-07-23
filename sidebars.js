@@ -27,6 +27,10 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'doc',
+      id: 'faqs',
+    },
   ],
 };
 
