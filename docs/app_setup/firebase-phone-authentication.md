@@ -10,3 +10,6 @@ Follow these steps to enable Phone Authentication:
 3. Enable Phone Sign-in method and click 'Save'
 
 ![Phone Authentication Setup](./img/phoneAuthentication.png)
+
+
+Refer [Firebase Setup Documentation](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase) for other settings which is required for Phone authentication

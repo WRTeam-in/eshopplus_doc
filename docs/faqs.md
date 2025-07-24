@@ -19,6 +19,9 @@ If you encounter a **'verification failed'** error while signing up in eShop Plu
         - Ensure your app's `lib/firebase_options.dart` (or `google-services.json` for Android / `GoogleService-Info.plist` for iOS) file is up to date and matches the configuration in your Firebase project.
         - If you recently made changes in Firebase, download the latest config file and replace the old one in your app.
 
+        4. **Check SMS region in firebase:**
+        - Ensure you have added your countries in which you want phone auhtentication to work in 'Allow' list in SMS region policy in firebase console as explained in App setup steps
+
         > **Tip:** After making these changes, clean and rebuild your app to ensure all updates are applied.
 
 ---
