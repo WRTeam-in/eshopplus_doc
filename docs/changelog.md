@@ -6,6 +6,7 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.0.7            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.6            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.5            | 3.32.2         | 2.0.20        | 8.6.1       | gradle-8.9-all.zip       | 21          |
 | 1.0.4            | 3.29.2         | 2.0.20        | 8.6.1      | gradle-8.9-all.zip       | 21         |
@@ -14,6 +15,12 @@
 
 
 ---
+
+:::tip Version 1.0.7 — 21 August 2025
+- [Added] Affiliate system.
+- [Improved] Code Improvement and minor bug fixes
+:::
+
 
 :::tip Version 1.0.6 — 12 June 2025
 - [Added] Bank Transfer Payment.
