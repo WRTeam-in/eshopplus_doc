@@ -6,6 +6,7 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.0.8            | 3.35.2         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.7            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.6            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.5            | 3.32.2         | 2.0.20        | 8.6.1       | gradle-8.9-all.zip       | 21          |
@@ -15,6 +16,16 @@
 
 
 ---
+
+:::tip Version 1.0.8 — 2 October 2025
+- [Added] Admin preference page with options for Single store / Multi store
+- [Added] Tooltips across admin preferences and settings page
+- [Added] "Set Deliver To location" feature in customer app
+- [Fixed] Variable product image issue: Correct variation-specific image now appears instead of main product image
+- [Improved] Minor bug fixes
+- [compatibility] Flutter upgraded to 3.35.2
+::
+
 
 :::tip Version 1.0.7 — 21 August 2025
 - [Added] Affiliate system.
