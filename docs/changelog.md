@@ -17,14 +17,14 @@
 
 ---
 
-:::tip Version 1.0.8 — 2 October 2025
+:::tip Version 1.0.8 — 3 October 2025
 - [Added] Admin preference page with options for Single store / Multi store
 - [Added] Tooltips across admin preferences and settings page
 - [Added] "Set Deliver To location" feature in customer app
 - [Fixed] Variable product image issue: Correct variation-specific image now appears instead of main product image
 - [Improved] Minor bug fixes
 - [compatibility] Flutter upgraded to 3.35.2
-::
+:::
 
 
 :::tip Version 1.0.7 — 21 August 2025

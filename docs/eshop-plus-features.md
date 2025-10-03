@@ -340,6 +340,12 @@ import TabItem from '@theme/TabItem';
     <li>Additionally, you can edit, activate, or deactivate a store as needed.</li>
     <li>The entire system is store-based, so adding a store is mandatory.</li>
   </ul>
+  <ul>
+  <h4> Selection for Single store or multi store</h4>
+ <li> You can change this setting in the admin panel under Settings → Admin Preferences</li>
+  ![Store selection](./feature/img/50__pastedGraphic.png)
+<font color="red">Note: If you select single store, you can't add multiple stores in the future.</font>
+  </ul>
 </div>
 
 <div className="divider"></div>
