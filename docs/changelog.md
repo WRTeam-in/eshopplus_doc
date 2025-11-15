@@ -6,6 +6,7 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.0.9            | 3.35.7         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.8            | 3.35.2         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.7            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.6            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
@@ -16,6 +17,16 @@
 
 
 ---
+
+:::tip Version 1.0.9 — 15 November 2025
+- [Added] Setup Progress Tracker in Admin Panel
+- [Added] Image Preview in Store Style Fields
+- [Added] Country Code Storage in User Details
+- [Removed] Redundant Fields in Store Creation
+- [Improved] Bulk Upload Reliability
+- [Improved] Sidebar navigation improvement
+- [Improved] System-wide bug fixes and performance
+:::
 
 :::tip Version 1.0.8 — 3 October 2025
 - [Added] Admin preference page with options for Single store / Multi store
