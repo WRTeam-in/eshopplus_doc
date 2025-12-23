@@ -6,6 +6,8 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.0.11            | 3.38.2         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21  
+| 1.0.10            | 3.35.7         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.9            | 3.35.7         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.8            | 3.35.2         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.7            | 3.32.6         | 2.0.20        | 8.11.0      | gradle-8.13-all.zip       | 21          |
@@ -17,6 +19,23 @@
 
 
 ---
+
+:::tip Version 1.0.11 — 23 December 2025
+- [Added] Direct JSON language upload from Admin Panel (App, Panel, Web).
+- [Added] View and delete pending Brands & Categories in Seller App.
+- [Added] Sellers can deactivate or delete empty stores.
+- [Added] Delivery Boy active/inactive availability toggle.
+- [Added] Optional alternate slider image for web.
+- [Improved] Merged Language & System Settings APIs.
+- [Improved] Added rider cash entries in Delivery Boy orders.
+- [Improved] Support Ticket chat enabled after admin reply.
+- [Improved] Bug fixes and performance improvements.
+- [Compatible] Flutter 3.38.2
+:::
+
+:::tip Version 1.0.10 — 23 November 2025
+- [Improved] System-wide bug fixes and performance enhancements
+:::
 
 :::tip Version 1.0.9 — 15 November 2025
 - [Added] Setup Progress Tracker in Admin Panel
