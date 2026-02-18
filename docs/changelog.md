@@ -6,6 +6,7 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.1.0            | 3.38.5         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21  
 | 1.0.11            | 3.38.2         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21  
 | 1.0.10            | 3.35.7         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
 | 1.0.9            | 3.35.7         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
@@ -19,6 +20,14 @@
 
 
 ---
+
+:::tip Version 1.1.0 — 19 February 2026
+- [Added] Integrated Shiprocket for improved shipping management
+- [Added] Added Blog feature in the customer app
+- [Improved] Enhanced deep link handling with improved web redirection
+- [Improved] Bug fixes and performance improvements
+- [Compatible] Flutter 3.38.5
+:::
 
 :::tip Version 1.0.11 — 23 December 2025
 - [Added] Direct JSON language upload from Admin Panel (App, Panel, Web).
