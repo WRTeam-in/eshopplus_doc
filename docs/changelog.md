@@ -6,6 +6,7 @@
 
 | Product Version | Flutter Version | Kotlin Version | AGP Version | distributionUrl (Gradle) | JDK Version |
 |----------------|----------------|---------------|-------------|--------------------------|-------------|
+| 1.1.1            | 3.41.2        | 2.3.0       | 8.11.0      | gradle-8.13-all.zip       | 21  
 | 1.1.0            | 3.38.5         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21  
 | 1.0.11            | 3.38.2         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21  
 | 1.0.10            | 3.35.7         | 2.1.0       | 8.11.0      | gradle-8.13-all.zip       | 21          |
@@ -20,6 +21,13 @@
 
 
 ---
+:::tip Version 1.1.1 — 	24 March 2026
+- [Updated] Dependencies and packages upgraded across apps, web, and backend
+- [Improved] Cart system and APIs optimized for better performance and UI auto-updates
+- [Improved] Stores and categories without products are now hidden automatically
+- [Fixed] Payment gateway issues, installer improvements, and general bug fixes across the system
+- [Compatible] Flutter 3.41.2
+:::
 
 :::tip Version 1.1.0 — 19 February 2026
 - [Added] Integrated Shiprocket for improved shipping management
