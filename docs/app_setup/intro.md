@@ -16,7 +16,7 @@ This guide will help you set up and use eShop Plus — a powerful multi-vendor e
 
 ### For mobile app
 
-1. Flutter Version: Flutter stable channel 3.38.5
+1. Flutter Version: Flutter stable channel 3.41.2
 2. Java Version: JDK version 21
 3. XCode : XCode version 26.2
 4. Android SDK : SDK 36 

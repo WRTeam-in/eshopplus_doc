@@ -12,4 +12,4 @@ Follow these steps to enable Phone Authentication:
 ![Phone Authentication Setup](./img/phoneAuthentication.png)
 
 
-Refer [Firebase Setup Documentation](https://wrteam-in.github.io/common_app_doc/GeneralSettings/firebase) for other settings which is required for Phone authentication
+Refer [Firebase Setup Documentation](https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings/firebase) for other settings which is required for Phone authentication

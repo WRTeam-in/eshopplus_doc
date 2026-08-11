@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentPanel = document.getElementById('side-panel-content');
     
     // Base URL for GitHub Pages
-    const baseUrl = 'https://wrteam-in.github.io/common_app_doc/GeneralSettings';
+    const baseUrl = 'https://www.marketplace.wrteam.in/docs/flutter-common-doc/GeneralSettings';
     
     // Function to load documentation
     async function loadDocumentation(tabName) {
